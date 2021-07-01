@@ -450,15 +450,13 @@ function myfunc() {
 
 // Here onwards, functions check turn of the player 
 // and put accordingly value X or 0
-let englandFlag = 
+const currentFlagImage = document.getElementById( 'currentFlag' );
 
 flag = 1;
 function topLeftPress() {
   if (flag == 1) {
-      document.getElementById("t1").innerHTML = <img src='./images/eng-flag.png' alt=''>
-      document.getElementById("t1").style.textAlign = "center";
-      document.getElementById("t1").style.fontSize = "50px"
-      document.getElementById("t1").style.color = "red";
+      document.getElementById("t1").currentFlagImage.src = './images/eng-flag.png';
+
       document.getElementById("t1").disabled = true;
       flag = 0;
   }
