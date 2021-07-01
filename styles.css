@@ -16,6 +16,15 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: dodgerblue;
   font-size: 17px;
+  text-align: center;
+}
+
+#print {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: dodgerblue;
+  font-size: 17px;
+  text-align: center;
 }
 
 body {
@@ -23,8 +32,7 @@ body {
 }
 
 .board {
-  width: 100vw;
-  height: 100vh;
+  padding: 100px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -60,7 +68,8 @@ input:active {
 
 .square:last-child,
 .square:nth-child(7),
-.square:nth-child(8) {
+.square:nth-child(8),
+.square:nth-child(9) {
   border-bottom: none;
 }
 
@@ -71,6 +80,10 @@ input:active {
   height: 40px;
   border: 1px solid dodgerblue;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   border-radius: 4px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: dodgerblue;

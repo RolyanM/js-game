@@ -363,13 +363,22 @@ function btmRightPress() {
 // Function to reset game
 function resetFunc() {
   document.getElementById('t1').value = '';
+  document.getElementById("t1").disabled = false;
   document.getElementById("t2").value = '';
+  document.getElementById("t2").disabled = false;
   document.getElementById("t3").value = '';
+  document.getElementById("t3").disabled = false;
   document.getElementById("m1").value = '';
+  document.getElementById("m1").disabled = false;
   document.getElementById("m2").value = '';
+  document.getElementById("m2").disabled = false;
   document.getElementById("m3").value = '';
+  document.getElementById("m3").disabled = false;
   document.getElementById("bt1").value = '';
+  document.getElementById("bt1").disabled = false;
   document.getElementById("bt2").value = '';
+  document.getElementById("bt2").disabled = false;
   document.getElementById("bt3").value = '';
+  document.getElementById("bt3").disabled = false;
 
 }
