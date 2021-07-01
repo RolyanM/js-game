@@ -238,20 +238,7 @@ function myfunc() {
   }
 }
 
-// Function to reset game
-function resetFunc() {
-  
-  document.getElementById('t1').value = '';
-  document.getElementById("t2").value = '';
-  document.getElementById("t3").value = '';
-  document.getElementById("m1").value = '';
-  document.getElementById("m2").value = '';
-  document.getElementById("m3").value = '';
-  document.getElementById("bt1").value = '';
-  document.getElementById("bt2").value = '';
-  document.getElementById("bt3").value = '';
 
-}
 
 // Here onwards, functions check turn of the player 
 // and put accordingly value X or 0
@@ -371,4 +358,18 @@ function btmRightPress() {
       document.getElementById("bt3").disabled = true;
       flag = 1;
   }
+}
+
+// Function to reset game
+function resetFunc() {
+  document.getElementById('t1').value = '';
+  document.getElementById("t2").value = '';
+  document.getElementById("t3").value = '';
+  document.getElementById("m1").value = '';
+  document.getElementById("m2").value = '';
+  document.getElementById("m3").value = '';
+  document.getElementById("bt1").value = '';
+  document.getElementById("bt2").value = '';
+  document.getElementById("bt3").value = '';
+
 }

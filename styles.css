@@ -37,6 +37,11 @@ body {
   width: var(--cell-size);
   height: var(--cell-size);
   border: 1px solid black;
+  background-color: white;
+}
+
+input:active {
+  background-color: white;
 }
 
 .square:first-child,
