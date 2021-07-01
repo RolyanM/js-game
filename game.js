@@ -230,11 +230,15 @@ flag = 1;
 function topLeftPress() {
   if (flag == 1) {
       document.getElementById("t1").value = "X";
+      document.getElementById("t1").style.textAlign = "center";
+      document.getElementById("t1").style.fontSize = "50px"
       document.getElementById("t1").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("t1").value = "0";
+      document.getElementById("t1").style.textAlign = "center";
+      document.getElementById("t1").style.fontSize = "50px"
       document.getElementById("t1").disabled = true;
       flag = 1;
   }
@@ -243,11 +247,15 @@ function topLeftPress() {
 function topMidPress() {
   if (flag == 1) {
       document.getElementById("t2").value = "X";
+      document.getElementById("t2").style.textAlign = "center";
+      document.getElementById("t2").style.fontSize = "50px"
       document.getElementById("t2").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("t2").value = "0";
+      document.getElementById("t2").style.textAlign = "center";
+      document.getElementById("t2").style.fontSize = "50px"
       document.getElementById("t2").disabled = true;
       flag = 1;
   }
@@ -256,11 +264,15 @@ function topMidPress() {
 function topRightPress() {
   if (flag == 1) {
       document.getElementById("t3").value = "X";
+      document.getElementById("t3").style.textAlign = "center";
+      document.getElementById("t3").style.fontSize = "50px"
       document.getElementById("t3").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("t3").value = "0";
+      document.getElementById("t3").style.textAlign = "center";
+      document.getElementById("t3").style.fontSize = "50px"
       document.getElementById("t3").disabled = true;
       flag = 1;
   }
@@ -269,11 +281,15 @@ function topRightPress() {
 function midLeftPress() {
   if (flag == 1) {
       document.getElementById("m1").value = "X";
+      document.getElementById("m1").style.textAlign = "center";
+      document.getElementById("m1").style.fontSize = "50px"
       document.getElementById("m1").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("m1").value = "0";
+      document.getElementById("m1").style.textAlign = "center";
+      document.getElementById("m1").style.fontSize = "50px"
       document.getElementById("m1").disabled = true;
       flag = 1;
   }
@@ -282,11 +298,15 @@ function midLeftPress() {
 function midMidPress() {
   if (flag == 1) {
       document.getElementById("m2").value = "X";
+      document.getElementById("m2").style.textAlign = "center";
+      document.getElementById("m2").style.fontSize = "50px"
       document.getElementById("m2").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("m2").value = "0";
+      document.getElementById("m2").style.textAlign = "center";
+      document.getElementById("m2").style.fontSize = "50px"
       document.getElementById("m2").disabled = true;
       flag = 1;
   }
@@ -295,11 +315,15 @@ function midMidPress() {
 function midRightPress() {
   if (flag == 1) {
       document.getElementById("m3").value = "X";
+      document.getElementById("m3").style.textAlign = "center";
+      document.getElementById("m3").style.fontSize = "50px"
       document.getElementById("m3").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("m3").value = "0";
+      document.getElementById("m3").style.textAlign = "center";
+      document.getElementById("m3").style.fontSize = "50px"
       document.getElementById("m3").disabled = true;
       flag = 1;
   }
@@ -308,11 +332,15 @@ function midRightPress() {
 function btmLeftPress() {
   if (flag == 1) {
       document.getElementById("bt1").value = "X";
+      document.getElementById("bt1").style.textAlign = "center";
+      document.getElementById("bt1").style.fontSize = "50px"
       document.getElementById("bt1").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("bt1").value = "0";
+      document.getElementById("bt1").style.textAlign = "center";
+      document.getElementById("bt1").style.fontSize = "50px"
       document.getElementById("bt1").disabled = true;
       flag = 1;
   }
@@ -321,11 +349,15 @@ function btmLeftPress() {
 function btmMidPress() {
   if (flag == 1) {
       document.getElementById("bt2").value = "X";
+      document.getElementById("bt2").style.textAlign = "center";
+      document.getElementById("bt2").style.fontSize = "50px"
       document.getElementById("bt2").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("bt2").value = "0";
+      document.getElementById("bt2").style.textAlign = "center";
+      document.getElementById("bt2").style.fontSize = "50px"
       document.getElementById("bt2").disabled = true;
       flag = 1;
   }
@@ -334,11 +366,15 @@ function btmMidPress() {
 function btmRightPress() {
   if (flag == 1) {
       document.getElementById("bt3").value = "X";
+      document.getElementById("bt3").style.textAlign = "center";
+      document.getElementById("bt3").style.fontSize = "50px"
       document.getElementById("bt3").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("bt3").value = "0";
+      document.getElementById("bt3").style.textAlign = "center";
+      document.getElementById("bt3").style.fontSize = "50px"
       document.getElementById("bt3").disabled = true;
       flag = 1;
   }
