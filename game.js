@@ -319,7 +319,7 @@ function myfunc() {
       document.getElementById("bt2").disabled = true;
 
   }
-  else if ((topRight == '0') && (midMid == '0') && (btmRight == '0')) {
+  else if ((topLeft == '0') && (midMid == '0') && (btmRight == '0')) {
 
     var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
@@ -344,7 +344,7 @@ function myfunc() {
       document.getElementById("bt2").disabled = true;
 
   }
-  else if ((topRight == '0') && (midMid == '0') && (btmRight == '0')) {
+  else if ((topRight == '0') && (midMid == '0') && (btmLeft == '0')) {
 
     var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
@@ -456,6 +456,7 @@ function topLeftPress() {
       document.getElementById("t1").value = "X";
       document.getElementById("t1").style.textAlign = "center";
       document.getElementById("t1").style.fontSize = "50px"
+      document.getElementById("t1").style.color = "red";
       document.getElementById("t1").disabled = true;
       flag = 0;
   }
@@ -463,6 +464,7 @@ function topLeftPress() {
       document.getElementById("t1").value = "0";
       document.getElementById("t1").style.textAlign = "center";
       document.getElementById("t1").style.fontSize = "50px"
+      document.getElementById("t1").style.color = "blue";
       document.getElementById("t1").disabled = true;
       flag = 1;
   }
@@ -473,6 +475,7 @@ function topMidPress() {
       document.getElementById("t2").value = "X";
       document.getElementById("t2").style.textAlign = "center";
       document.getElementById("t2").style.fontSize = "50px"
+      document.getElementById("t2").style.color = "red";
       document.getElementById("t2").disabled = true;
       flag = 0;
   }
@@ -480,6 +483,7 @@ function topMidPress() {
       document.getElementById("t2").value = "0";
       document.getElementById("t2").style.textAlign = "center";
       document.getElementById("t2").style.fontSize = "50px"
+      document.getElementById("t2").style.color = "blue";
       document.getElementById("t2").disabled = true;
       flag = 1;
   }
@@ -490,6 +494,7 @@ function topRightPress() {
       document.getElementById("t3").value = "X";
       document.getElementById("t3").style.textAlign = "center";
       document.getElementById("t3").style.fontSize = "50px"
+      document.getElementById("t3").style.color = "red";
       document.getElementById("t3").disabled = true;
       flag = 0;
   }
@@ -497,6 +502,7 @@ function topRightPress() {
       document.getElementById("t3").value = "0";
       document.getElementById("t3").style.textAlign = "center";
       document.getElementById("t3").style.fontSize = "50px"
+      document.getElementById("t3").style.color = "blue";
       document.getElementById("t3").disabled = true;
       flag = 1;
   }
@@ -507,6 +513,7 @@ function midLeftPress() {
       document.getElementById("m1").value = "X";
       document.getElementById("m1").style.textAlign = "center";
       document.getElementById("m1").style.fontSize = "50px"
+      document.getElementById("m1").style.color = "red";
       document.getElementById("m1").disabled = true;
       flag = 0;
   }
@@ -514,6 +521,7 @@ function midLeftPress() {
       document.getElementById("m1").value = "0";
       document.getElementById("m1").style.textAlign = "center";
       document.getElementById("m1").style.fontSize = "50px"
+      document.getElementById("m1").style.color = "blue";
       document.getElementById("m1").disabled = true;
       flag = 1;
   }
@@ -524,6 +532,7 @@ function midMidPress() {
       document.getElementById("m2").value = "X";
       document.getElementById("m2").style.textAlign = "center";
       document.getElementById("m2").style.fontSize = "50px"
+      document.getElementById("m2").style.color = "red";
       document.getElementById("m2").disabled = true;
       flag = 0;
   }
@@ -531,6 +540,7 @@ function midMidPress() {
       document.getElementById("m2").value = "0";
       document.getElementById("m2").style.textAlign = "center";
       document.getElementById("m2").style.fontSize = "50px"
+      document.getElementById("m2").style.color = "blue";
       document.getElementById("m2").disabled = true;
       flag = 1;
   }
@@ -541,6 +551,7 @@ function midRightPress() {
       document.getElementById("m3").value = "X";
       document.getElementById("m3").style.textAlign = "center";
       document.getElementById("m3").style.fontSize = "50px"
+      document.getElementById("m3").style.color = "red";
       document.getElementById("m3").disabled = true;
       flag = 0;
   }
@@ -548,6 +559,7 @@ function midRightPress() {
       document.getElementById("m3").value = "0";
       document.getElementById("m3").style.textAlign = "center";
       document.getElementById("m3").style.fontSize = "50px"
+      document.getElementById("m3").style.color = "blue";
       document.getElementById("m3").disabled = true;
       flag = 1;
   }
@@ -558,6 +570,7 @@ function btmLeftPress() {
       document.getElementById("bt1").value = "X";
       document.getElementById("bt1").style.textAlign = "center";
       document.getElementById("bt1").style.fontSize = "50px"
+      document.getElementById("bt1").style.color = "red";
       document.getElementById("bt1").disabled = true;
       flag = 0;
   }
@@ -565,6 +578,7 @@ function btmLeftPress() {
       document.getElementById("bt1").value = "0";
       document.getElementById("bt1").style.textAlign = "center";
       document.getElementById("bt1").style.fontSize = "50px"
+      document.getElementById("bt1").style.color = "blue";
       document.getElementById("bt1").disabled = true;
       flag = 1;
   }
@@ -575,6 +589,7 @@ function btmMidPress() {
       document.getElementById("bt2").value = "X";
       document.getElementById("bt2").style.textAlign = "center";
       document.getElementById("bt2").style.fontSize = "50px"
+      document.getElementById("bt2").style.color = "red";
       document.getElementById("bt2").disabled = true;
       flag = 0;
   }
@@ -582,6 +597,7 @@ function btmMidPress() {
       document.getElementById("bt2").value = "0";
       document.getElementById("bt2").style.textAlign = "center";
       document.getElementById("bt2").style.fontSize = "50px"
+      document.getElementById("bt2").style.color = "blue";
       document.getElementById("bt2").disabled = true;
       flag = 1;
   }
@@ -592,6 +608,7 @@ function btmRightPress() {
       document.getElementById("bt3").value = "X";
       document.getElementById("bt3").style.textAlign = "center";
       document.getElementById("bt3").style.fontSize = "50px"
+      document.getElementById("bt3").style.color = "red";
       document.getElementById("bt3").disabled = true;
       flag = 0;
   }
@@ -599,6 +616,7 @@ function btmRightPress() {
       document.getElementById("bt3").value = "0";
       document.getElementById("bt3").style.textAlign = "center";
       document.getElementById("bt3").style.fontSize = "50px"
+      document.getElementById("bt3").style.color = "blue";
       document.getElementById("bt3").disabled = true;
       flag = 1;
   }
