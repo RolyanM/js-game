@@ -15,8 +15,22 @@ function myfunc() {
   // Checking if Player X won or not and after 
   // that disabled all the other fields
   if ((topLeft == 'X') && (topMid == 'X') && (topRight == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+      var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+      textSequence(0);
+      function textSequence(i) {
+
+          if (xWinningMessage.length > i) {
+              setTimeout(function() {
+                  document.getElementById("print").innerHTML = xWinningMessage[i];
+                  textSequence(++i);
+              }, 1000); 
+          } else if (flashing.length == i) { // Loop
+              textSequence(6);
+          }
+
+      }
       document.getElementById("m1").disabled = true;
       document.getElementById("m2").disabled = true;
       document.getElementById("m3").disabled = true;
@@ -26,8 +40,22 @@ function myfunc() {
       
   }
   else if ((topLeft == 'X') && (midLeft == 'X') && (btmLeft == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
       document.getElementById("m2").disabled = true;
@@ -38,8 +66,22 @@ function myfunc() {
     
   }
   else if ((btmLeft == 'X') && (btmMid == 'X') && (btmRight == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
@@ -49,8 +91,22 @@ function myfunc() {
 
   }
   else if ((topRight == 'X') && (midRight == 'X') && (btmRight == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -60,8 +116,22 @@ function myfunc() {
 
   }
   else if ((topLeft == 'X') && (midMid == 'X') && (btmRight == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -71,8 +141,22 @@ function myfunc() {
 
   }
   else if ((topRight == 'X') && (midMid == 'X') && (btmLeft == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -82,8 +166,22 @@ function myfunc() {
 
   }
   else if ((topMid == 'X') && (midMid == 'X') && (btmMid == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t3").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -93,8 +191,22 @@ function myfunc() {
 
   }
   else if ((midLeft == 'X') && (midMid == 'X') && (midRight == 'X')) {
-      document.getElementById('print')
-          .innerHTML = "Player X won";
+
+    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (xWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = xWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
@@ -108,8 +220,22 @@ function myfunc() {
   // Checking for Player 0 starts, Is player 0 won or
   // not and after that disabled all the other fields
   else if ((topLeft == '0') && (topMid == '0') && (topRight == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("m1").disabled = true;
       document.getElementById("m2").disabled = true;
       document.getElementById("m3").disabled = true;
@@ -119,8 +245,22 @@ function myfunc() {
 
   }
   else if ((topLeft == '0') && (midLeft == '0') && (btmLeft == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
       document.getElementById("m2").disabled = true;
@@ -130,8 +270,22 @@ function myfunc() {
 
   }
   else if ((btmLeft == '0') && (btmMid == '0') && (btmRight == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
@@ -141,8 +295,22 @@ function myfunc() {
 
   }
   else if ((topRight == '0') && (midRight == '0') && (btmRight == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -152,8 +320,22 @@ function myfunc() {
 
   }
   else if ((topRight == '0') && (midMid == '0') && (btmRight == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -163,8 +345,22 @@ function myfunc() {
 
   }
   else if ((topRight == '0') && (midMid == '0') && (btmRight == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -174,8 +370,22 @@ function myfunc() {
 
   }
   else if ((topMid == '0') && (midMid == '0') && (btmMid == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t3").disabled = true;
       document.getElementById("m1").disabled = true;
@@ -185,8 +395,22 @@ function myfunc() {
 
   }
   else if ((midLeft == '0') && (midMid == '0') && (midRight == '0')) {
-      document.getElementById('print')
-          .innerHTML = "Player 0 won";
+
+    var oWinningMessage = ['Eaaassssyyyyyyy', 'Eaaaaaaasssssyyyyy', 'Easy', 'Easy!', 'Easy!!', 'Player 0 won' ];
+
+    textSequence(0);
+    function textSequence(i) {
+
+        if (oWinningMessage.length > i) {
+            setTimeout(function() {
+                document.getElementById("print").innerHTML = oWinningMessage[i];
+                textSequence(++i);
+            }, 1000); 
+        } else if (flashing.length == i) { // Loop
+            textSequence(6);
+        }
+
+    }
       document.getElementById("t1").disabled = true;
       document.getElementById("t2").disabled = true;
       document.getElementById("t3").disabled = true;
@@ -205,7 +429,7 @@ function myfunc() {
       (btmLeft == 'X' || btmLeft == '0') && (btmMid == 'X' || 
       btmMid == '0') && (btmRight == 'X' || btmRight == '0')) {
           document.getElementById('print')
-              .innerHTML = "Match Tie";
+              .innerHTML = "Draw!";
 
   }
   else {
