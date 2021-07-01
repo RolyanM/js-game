@@ -8,31 +8,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <main>
+  <p id="print"></p>
+    <div class="board" id="board">
+    <!-- 3*3 grid of Boxes -->
+    <input id="t1" onclick="topLeftPress(); myfunc();" class="square" >
+    
 
-  <h3 class="player"></h3>
-<div class="container">
- 
- <!-- Top row -->
-      <div class="t1" onclick="topLeftPress(); playerTurn();" type="text" readonly></div>
-      <div class="t2"></div>
-      <div class="t3"></div>
+    <input type="text" id="t2" onclick=
+        "topMidPress(); myfunc();" class="square" >
+    
 
- <!-- middle row -->
-      <div class="m1"></div>
-      <div class="m2"></div>
-      <div class="m3"></div>
+    <input type="text" id="t3" onclick=
+        "topRightPress(); myfunc();" class="square" >
+    
 
+    <input type="text" id="m1" onclick=
+        "midLeftPress(); myfunc();" class="square" >
+    
 
-  <!-- bottom row -->
-      <div class="b1"></div>
-      <div class="b2"></div>
-      <div class="b3"></div>
+    <input type="text" id="m2" onclick=
+        "midMidPress(); myfunc();" class="square" >
+    
 
-</div>
+    <input type="text" id="m3" onclick=
+        "midRightPress(); myfunc();" class="square" >
+    
 
-<button onclick="resetButton();">Restart the Game</button>
+    <input type="text" id="bt1" onclick=
+        "btmLeftPress(); myfunc();" class="square">
+    
 
+    <input type="text" id="bt2" onclick=
+        "btmMidPress();myfunc();" class="square">
+    
+
+    <input type="text" id="bt3" onclick=
+        "btmRightPress();myfunc();" class="square">
+    
+    <!-- Button to reset game -->
+      <br>
+    <br>
+    <br>
+    <div>
+      <button id="but" onclick="resetFunc()">
+          RESET
+      </button>
+    </div>
+
+  </div>
+    <!-- Grid end here  -->
+    <br><br><br>
+
+  </main>
   <script src="./game.js"></script>
 </body>
 </html>
