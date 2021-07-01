@@ -14,8 +14,7 @@ function myfunc() {
 
   // Checking if Player X won or not and after 
   // that disabled all the other fields
-  if ((topLeft == 'x' || topLeft == 'X') && (topMid == 'x' ||
-  topMid == 'X') && (topRight == 'x' || topRight == 'X')) {
+  if ((topLeft == 'X') && (topMid == 'X') && (topRight == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("m1").disabled = true;
@@ -24,10 +23,9 @@ function myfunc() {
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player X won');
+      
   }
-  else if ((topLeft == 'x' || topLeft == 'X') && (midLeft == 'x' ||
-  midLeft == 'X') && (btmLeft == 'x' || btmLeft == 'X')) {
+  else if ((topLeft == 'X') && (midLeft == 'X') && (btmLeft == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t2").disabled = true;
@@ -37,10 +35,9 @@ function myfunc() {
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
 
-      window.alert('Player X won');
+    
   }
-  else if ((btmLeft == 'x' || btmLeft == 'X') && (btmMid == 'x' || 
-  btmMid == 'X') && (btmRight == 'x' || btmRight == 'X')) {
+  else if ((btmLeft == 'X') && (btmMid == 'X') && (btmRight == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t1").disabled = true;
@@ -49,10 +46,9 @@ function myfunc() {
       document.getElementById("m1").disabled = true;
       document.getElementById("m2").disabled = true;
       document.getElementById("m3").disabled = true;
-      window.alert('Player X won');
+
   }
-  else if ((topRight == 'x' || topRight == 'X') && (midRight == 'x' || 
-  midRight == 'X') && (btmRight == 'x' || btmRight == 'X')) {
+  else if ((topRight == 'X') && (midRight == 'X') && (btmRight == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t1").disabled = true;
@@ -61,10 +57,9 @@ function myfunc() {
       document.getElementById("m2").disabled = true;
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
-      window.alert('Player X won');
+
   }
-  else if ((topLeft == 'x' || topLeft == 'X') && (midMid == 'x' || 
-  midMid == 'X') && (btmRight == 'x' || btmRight == 'X')) {
+  else if ((topLeft == 'X') && (midMid == 'X') && (btmRight == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t2").disabled = true;
@@ -73,10 +68,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
-      window.alert('Player X won');
+
   }
-  else if ((topRight == 'x' || topRight == 'X') && (midMid == 'x' || 
-  midMid == 'X') && (btmLeft == 'x' || btmLeft == 'X')) {
+  else if ((topRight == 'X') && (midMid == 'X') && (btmLeft == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t1").disabled = true;
@@ -85,10 +79,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player X won');
+
   }
-  else if ((topMid == 'x' || topMid == 'X') && (midMid == 'x' || 
-  midMid == 'X') && (btmMid == 'x' || btmMid == 'X')) {
+  else if ((topMid == 'X') && (midMid == 'X') && (btmMid == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t1").disabled = true;
@@ -97,10 +90,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player X won');
+
   }
-  else if ((midLeft == 'x' || midLeft == 'X') && (midMid == 'x' || 
-  midMid == 'X') && (midRight == 'x' || midRight == 'X')) {
+  else if ((midLeft == 'X') && (midMid == 'X') && (midRight == 'X')) {
       document.getElementById('print')
           .innerHTML = "Player X won";
       document.getElementById("t1").disabled = true;
@@ -109,14 +101,13 @@ function myfunc() {
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player X won');
+
   }
 
   // Checking of Player X finsh
   // Checking for Player 0 starts, Is player 0 won or
   // not and after that disabled all the other fields
-  else if ((topLeft == '0' || topLeft == '0') && (topMid == '0' || 
-  topMid == '0') && (topRight == '0' || topRight == '0')) {
+  else if ((topLeft == '0') && (topMid == '0') && (topRight == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("m1").disabled = true;
@@ -125,10 +116,9 @@ function myfunc() {
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((topLeft == '0' || topLeft == '0') && (midLeft == '0' || 
-  midLeft == '0') && (btmLeft == '0' || btmLeft == '0')) {
+  else if ((topLeft == '0') && (midLeft == '0') && (btmLeft == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t2").disabled = true;
@@ -137,10 +127,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((btmLeft == '0' || btmLeft == '0') && (btmMid == '0' || 
-  btmMid == '0') && (btmRight == '0' || btmRight == '0')) {
+  else if ((btmLeft == '0') && (btmMid == '0') && (btmRight == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t1").disabled = true;
@@ -149,10 +138,9 @@ function myfunc() {
       document.getElementById("m1").disabled = true;
       document.getElementById("m2").disabled = true;
       document.getElementById("m3").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((topRight == '0' || topRight == '0') && (midRight == '0' || 
-  midRight == '0') && (btmRight == '0' || btmRight == '0')) {
+  else if ((topRight == '0') && (midRight == '0') && (btmRight == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t1").disabled = true;
@@ -161,10 +149,9 @@ function myfunc() {
       document.getElementById("m2").disabled = true;
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((topRight == '0' || topRight == '0') && (midMid == '0' || 
-  midMid == '0') && (btmRight == '0' || btmRight == '0')) {
+  else if ((topRight == '0') && (midMid == '0') && (btmRight == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t2").disabled = true;
@@ -173,10 +160,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((topRight == '0' || topRight == '0') && (midMid == '0' || 
-  midMid == '0') && (btmRight == '0' || btmRight == '0')) {
+  else if ((topRight == '0') && (midMid == '0') && (btmRight == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t1").disabled = true;
@@ -185,10 +171,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((topMid == '0' || topMid == '0') && (midMid == '0' || 
-  midMid == '0') && (btmMid == '0' || btmMid == '0')) {
+  else if ((topMid == '0') && (midMid == '0') && (btmMid == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t1").disabled = true;
@@ -197,10 +182,9 @@ function myfunc() {
       document.getElementById("m3").disabled = true;
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player 0 won');
+
   }
-  else if ((midLeft == '0' || midLeft == '0') && (midMid == '0' || 
-      midMid == '0') && (midRight == '0' || midRight == '0')) {
+  else if ((midLeft == '0') && (midMid == '0') && (midRight == '0')) {
       document.getElementById('print')
           .innerHTML = "Player 0 won";
       document.getElementById("t1").disabled = true;
@@ -209,7 +193,7 @@ function myfunc() {
       document.getElementById("bt1").disabled = true;
       document.getElementById("bt2").disabled = true;
       document.getElementById("bt3").disabled = true;
-      window.alert('Player 0 won');
+
   }
 
   // Checking of Player 0 finsh
@@ -222,7 +206,7 @@ function myfunc() {
       btmMid == '0') && (btmRight == 'X' || btmRight == '0')) {
           document.getElementById('print')
               .innerHTML = "Match Tie";
-          window.alert('Match Tie');
+
   }
   else {
 
