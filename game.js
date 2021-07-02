@@ -1,4 +1,4 @@
-function myfunc() {
+function ticTacToe() {
   
   // Setting DOM to all boxes or input field
   

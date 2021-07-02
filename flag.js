@@ -1,4 +1,4 @@
-function myfunc() {
+function ticTacToe() {
   
   // Setting DOM to all boxes or input field
   
@@ -453,17 +453,21 @@ function myfunc() {
 const currentFlagImage = document.getElementById( 'currentFlag' );
 
 flag = 1;
-function topLeftPress() {
+function topLeftPress(event) {
   if (flag == 1) {
       document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("t1").style.alignItems = "center";
+      document.getElementById("t1").event.stopPropagation();
       document.getElementById("t1").disabled = true;
+      document.getElementById("t1").event.preventDefault();
       flag = 0;
   }
   else {
       document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("t1").style.alignItems = "center";
+      document.getElementById("t1").event.stopPropagation();
       document.getElementById("t1").disabled = true;
+      document.getElementById("t1").event.preventDefault();
       flag = 1;
   }
 }
