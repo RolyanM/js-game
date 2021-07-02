@@ -456,13 +456,13 @@ flag = 1;
 function topLeftPress() {
   if (flag == 1) {
       document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-
+      document.getElementById("t1").style.alignItems = "center";
       document.getElementById("t1").disabled = true;
       flag = 0;
   }
   else {
       document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-
+      document.getElementById("t1").style.alignItems = "center";
       document.getElementById("t1").disabled = true;
       flag = 1;
   }
@@ -470,12 +470,14 @@ function topLeftPress() {
 
 function topMidPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("t2").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
     document.getElementById("t2").disabled = true;
+    document.getElementById("t2").style.alignItems = "center";
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("t2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("t2").style.alignItems = "center";
     document.getElementById("t2").disabled = true;
       flag = 1;
   }
@@ -483,12 +485,12 @@ function topMidPress() {
 
 function topRightPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("t3").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("t3").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("t3").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("t3").disabled = true;
       flag = 1;
   }
@@ -496,12 +498,12 @@ function topRightPress() {
 
 function midLeftPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("m1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("m1").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("m1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("m1").disabled = true;
       flag = 1;
   }
@@ -509,12 +511,12 @@ function midLeftPress() {
 
 function midMidPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("m2").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("m2").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("m2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("m2").disabled = true;
       flag = 1;
   }
@@ -522,12 +524,12 @@ function midMidPress() {
 
 function midRightPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("m3").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("m3").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("m3").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("m3").disabled = true;
       flag = 1;
   }
@@ -535,12 +537,12 @@ function midRightPress() {
 
 function btmLeftPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("bt1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("bt1").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("bt1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("bt1").disabled = true;
       flag = 1;
   }
@@ -548,12 +550,12 @@ function btmLeftPress() {
 
 function btmMidPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("bt2").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("bt2").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("bt2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("bt2").disabled = true;
       flag = 1;
   }
@@ -561,12 +563,12 @@ function btmMidPress() {
 
 function btmRightPress() {
   if (flag == 1) {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
+    document.getElementById("bt3").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
       document.getElementById("bt3").disabled = true;
       flag = 0;
   }
   else {
-    document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
+    document.getElementById("bt3").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
       document.getElementById("bt3").disabled = true;
       flag = 1;
   }
