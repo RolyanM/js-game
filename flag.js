@@ -477,7 +477,7 @@ function topMidPress() {
   }
   else {
     document.getElementById("t2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-    document.getElementById("t2").style.alignItems = "center";
+    
     document.getElementById("t2").disabled = true;
       flag = 1;
   }
