@@ -1,602 +1,118 @@
-function ticTacToe() {
-  
-  // Setting DOM to all boxes or input field
-  
-  let topLeft = document.getElementById("t1").value;
-  let topMid = document.getElementById("t2").value;
-  let topRight = document.getElementById("t3").value;
-  let midLeft = document.getElementById("m1").value;
-  let midMid= document.getElementById("m2").value;
-  let midRight = document.getElementById("m3").value;
-  let btmLeft = document.getElementById("bt1").value;
-  let btmMid= document.getElementById("bt2").value;
-  let btmRight = document.getElementById("bt3").value;
-
-  // Checking if Player X won or not and after 
-  // that disabled all the other fields
-  if ((topLeft == 'X') && (topMid == 'X') && (topRight == 'X')) {
-
-      let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-      textSequence(0);
-      function textSequence(i) {
-
-          if (xWinningMessage.length > i) {
-              setTimeout(function() {
-                  document.getElementById("print").innerHTML = xWinningMessage[i];
-                  textSequence(++i);
-              }, 1000); 
-          } else if (flashing.length == i) { // Loop
-              textSequence(6);
-          }
-
-      }
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-      
-  }
-  else if ((topLeft == 'X') && (midLeft == 'X') && (btmLeft == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-    
-  }
-  else if ((btmLeft == 'X') && (btmMid == 'X') && (btmRight == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("m3").disabled = true;
-
-  }
-  else if ((topRight == 'X') && (midRight == 'X') && (btmRight == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-
-  }
-  else if ((topLeft == 'X') && (midMid == 'X') && (btmRight == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-
-  }
-  else if ((topRight == 'X') && (midMid == 'X') && (btmLeft == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-  else if ((topMid == 'X') && (midMid == 'X') && (btmMid == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-  else if ((midLeft == 'X') && (midMid == 'X') && (midRight == 'X')) {
-
-    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (xWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = xWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-
-  // Checking of Player X finsh
-  // Checking for Player 0 starts, Is player 0 won or
-  // not and after that disabled all the other fields
-  else if ((topLeft == '0') && (topMid == '0') && (topRight == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-  else if ((topLeft == '0') && (midLeft == '0') && (btmLeft == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-  else if ((btmLeft == '0') && (btmMid == '0') && (btmRight == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("m3").disabled = true;
-
-  }
-  else if ((topRight == '0') && (midRight == '0') && (btmRight == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m2").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-
-  }
-  else if ((topLeft == '0') && (midMid == '0') && (btmRight == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-
-  }
-  else if ((topRight == '0') && (midMid == '0') && (btmLeft == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-  else if ((topMid == '0') && (midMid == '0') && (btmMid == '0')) {
-
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("m1").disabled = true;
-      document.getElementById("m3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-  else if ((midLeft == '0') && (midMid == '0') && (midRight == '0')) {
-
-    let oWinningMessage = ['Eaaassssyyyyyyy', 'Eaaaaaaasssssyyyyy', 'Easy', 'Easy!', 'Easy!!', 'Player 0 won' ];
-
-    textSequence(0);
-    function textSequence(i) {
-
-        if (oWinningMessage.length > i) {
-            setTimeout(function() {
-                document.getElementById("print").innerHTML = oWinningMessage[i];
-                textSequence(++i);
-            }, 1000); 
-        } else if (flashing.length == i) { // Loop
-            textSequence(6);
-        }
-
-    }
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t2").disabled = true;
-      document.getElementById("t3").disabled = true;
-      document.getElementById("bt1").disabled = true;
-      document.getElementById("bt2").disabled = true;
-      document.getElementById("bt3").disabled = true;
-
-  }
-
-  // Checking of Player 0 finsh
-  // Here, Checking about Tie
-  else if ((topLeft == 'X' || topLeft == '0') && (topMid == 'X' 
-      || topMid == '0') && (topRight == 'X' || topRight == '0') && 
-      (midLeft == 'X' || midLeft == '0') && (midMid == 'X' || 
-      midMid == '0') && (midRight == 'X' || midRight == '0') && 
-      (btmLeft == 'X' || btmLeft == '0') && (btmMid == 'X' || 
-      btmMid == '0') && (btmRight == 'X' || btmRight == '0')) {
-          document.getElementById('print')
-              .innerHTML = "Draw!";
-
-  }
-  else {
-
-      // Here, Printing Result
-      if (flag == 1) {
-          document.getElementById('print')
-              .innerHTML = "Player X Turn";
-      }
-      else {
-          document.getElementById('print')
-              .innerHTML = "Player 0 Turn";
-      }
+// -- HTML elements --
+const board = document.getElementById( 'board' );
+const cells = document.querySelectorAll( '[data-cell]' );
+const currentStatus = document.getElementById( 'currentStatus' );
+const resetButton = document.getElementById( 'resetButton' );
+const gameEndOverlay = document.getElementById( 'gameEndOverlay' );
+const currentTeamFlag = document.getElementById( 'currentTeam' );
+const winningMessage = document.querySelector( '[data-winning-message]' );
+const winningMessageText = document.querySelector( '[data-winning-message] p' );
+const winningMessageImg = document.createElement( 'img' );
+
+// -- Game Variables --
+let gameIsLive = true;
+let englandTurn = true;
+let winner = null;
+const winningCombinations = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]
+];
+
+// -- Functions --
+const setBoardHoverClass = () => {
+  board.classList.remove( 'england' );
+  board.classList.remove( 'argentina' );
+
+  if ( englandTurn ) {
+    board.classList.add( 'england' );
+  } else {
+    board.classList.add( 'argentina' );
   }
 }
 
+const placeFlagFunction = ( cell, currentTeamFlag ) => {
+  cell.classList.add( currentTeamFlag );
+}
 
+const swapTurns = () => {
+  englandTurn = !englandTurn;
+}
 
-// Here onwards, functions check turn of the player 
-// and put accordingly value X or 0
-const currentFlagImage = document.getElementById( 'currentFlag' );
-
-flag = 1;
-function topLeftPress(event) {
-  if (flag == 1) {
-      document.getElementById("t1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("t1").style.alignItems = "center";
-      document.getElementById("t1").event.stopPropagation();
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t1").event.preventDefault();
-      flag = 0;
-  }
-  else {
-      document.getElementById("t1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("t1").style.alignItems = "center";
-      document.getElementById("t1").event.stopPropagation();
-      document.getElementById("t1").disabled = true;
-      document.getElementById("t1").event.preventDefault();
-      flag = 1;
+const updateCurrentStatus = () => {
+  if ( englandTurn ) {
+    currentTeamFlag.src = './images/flag-england-flagge-quadratisch-85x85.gif';
+    currentTeamFlag.alt = 'england';
+  } else {
+    currentTeamFlag.src = 'https://flagcdn.com/w80/ar.png';
+    currentTeamFlag.alt = 'argentina';
   }
 }
 
-function topMidPress() {
-  if (flag == 1) {
-    document.getElementById("t2").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-    document.getElementById("t2").disabled = true;
-    document.getElementById("t2").style.alignItems = "center";
-      flag = 0;
+const checkWin = ( currentTeamFlag ) => {
+  return winningCombinations.some( combination => {
+    return combination.every( i => {
+      return cells[i].classList.contains( currentTeamFlag );
+    })
+  });
+}
+
+const isDraw = () => {
+  return [...cells].every( cell => {
+    return cell.classList.contains( 'england' ) || cell.classList.contains( 'argentina' );
+  })
+}
+
+const startGame = () => {
+  cells.forEach( cell => {
+    winningMessageImg.remove();
+    cell.classList.remove( 'england' );
+    cell.classList.remove( 'argentina' );
+    cell.removeEventListener( 'click', handleCellClick );
+    cell.addEventListener( 'click', handleCellClick, { once: true });
+  });
+
+  setBoardHoverClass();
+  gameEndOverlay.classList.remove( 'show' );
+}
+
+const endGame = ( draw ) => {
+  if ( draw ) {
+    winningMessageText.innerText = `draw!`;
+  } else {
+    winningMessageImg.src = englandTurn ? './images/flag-england-flagge-quadratisch-85x85.gif' : './images/flag-argentina-flagge-quadratischschwarz-83x83.gif';
+    winningMessageImg.alt = englandTurn ? 'england' : 'argentina';
+    winningMessage.insertBefore( winningMessageImg, winningMessageText );
+    winningMessageText.innerText = `wins!!!`
   }
-  else {
-    document.getElementById("t2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-    
-    document.getElementById("t2").disabled = true;
-      flag = 1;
+
+  gameEndOverlay.classList.add( 'show' );
+}
+
+// -- Event Handler --
+const handleCellClick = ( e ) => {
+  const cell = e.target;
+  const currentTeam = englandTurn ? 'england' : 'argentina';
+
+  placeFlagFunction( cell, currentTeam );
+  if ( checkWin( currentTeam )) {
+    endGame( false );
+  } else if ( isDraw()) {
+    endGame( true );
+  } else {
+    swapTurns();
+    updateCurrentStatus();
+    setBoardHoverClass();
   }
 }
 
-function topRightPress() {
-  if (flag == 1) {
-    document.getElementById("t3").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("t3").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("t3").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("t3").disabled = true;
-      flag = 1;
-  }
-}
+// -- Event Listener --
+resetButton.addEventListener( 'click', startGame );
 
-function midLeftPress() {
-  if (flag == 1) {
-    document.getElementById("m1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("m1").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("m1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("m1").disabled = true;
-      flag = 1;
-  }
-}
-
-function midMidPress() {
-  if (flag == 1) {
-    document.getElementById("m2").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("m2").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("m2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("m2").disabled = true;
-      flag = 1;
-  }
-}
-
-function midRightPress() {
-  if (flag == 1) {
-    document.getElementById("m3").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("m3").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("m3").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("m3").disabled = true;
-      flag = 1;
-  }
-}
-
-function btmLeftPress() {
-  if (flag == 1) {
-    document.getElementById("bt1").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("bt1").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("bt1").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("bt1").disabled = true;
-      flag = 1;
-  }
-}
-
-function btmMidPress() {
-  if (flag == 1) {
-    document.getElementById("bt2").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("bt2").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("bt2").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("bt2").disabled = true;
-      flag = 1;
-  }
-}
-
-function btmRightPress() {
-  if (flag == 1) {
-    document.getElementById("bt3").innerHTML = `<img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentFlag">`;
-      document.getElementById("bt3").disabled = true;
-      flag = 0;
-  }
-  else {
-    document.getElementById("bt3").innerHTML = `<img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="Argentina Flag">`;
-      document.getElementById("bt3").disabled = true;
-      flag = 1;
-  }
-}
-
-// Function to reset game
-function resetFunc() {
-  document.getElementById('t1').innerHTML = '';
-  document.getElementById("t1").disabled = false;
-  document.getElementById("t2").innerHTML = '';
-  document.getElementById("t2").disabled = false;
-  document.getElementById("t3").innerHTML = '';
-  document.getElementById("t3").disabled = false;
-  document.getElementById("m1").innerHTML = '';
-  document.getElementById("m1").disabled = false;
-  document.getElementById("m2").innerHTML = '';
-  document.getElementById("m2").disabled = false;
-  document.getElementById("m3").innerHTML = '';
-  document.getElementById("m3").disabled = false;
-  document.getElementById("bt1").innerHTML = '';
-  document.getElementById("bt1").disabled = false;
-  document.getElementById("bt2").innerHTML = '';
-  document.getElementById("bt2").disabled = false;
-  document.getElementById("bt3").innerHTML = '';
-  document.getElementById("bt3").disabled = false;
-
-}
+// -- Start Game --
+startGame();

@@ -15,64 +15,33 @@
    
   </div>
   <main>
-    <p id="ins">Click on where you want to go</p>
-<div class="current-status">
-  <img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="England Flag">
-  <img src="./images/flag-argentina-flagge-quadratischschwarz-83x83.gif" alt="" id="England Flag">
-</div>
-
-
-    <div class="board" id="board">
-    <!-- 3*3 grid of Boxes -->
-    <div id="t1" onclick="topLeftPress(); myfunc();" class="square" >
+    <div class="wrapper">
+      <h1>England <span>vs</span> Argentina</h1>
+      <div class="current-status" id="currentStatus">
+        <img src="./images/flag-england-flagge-quadratisch-85x85.gif" alt="" id="currentTeam">
+        <p>'s turn</p>
+      </div>
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="game-end-overlay" id="gameEndOverlay">
+        <div class="winning-message" data-winning-message>
+          <p></p>
+        </div>
+        <div class="btn-container">
+          <button class="reset-button" id="resetButton">play again</button>
+        </div>
+      </div>
     </div>
-    
-
-    <div type="text" id="t2" onclick=
-        "topMidPress(); myfunc();" class="square" >
-      </div>
-
-    <div type="text" id="t3" onclick=
-        "topRightPress(); myfunc();" class="square" >
-      </div>
-
-    <div type="text" id="m1" onclick=
-        "midLeftPress(); myfunc();" class="square" >
-      </div>
-
-    <div type="text" id="m2" onclick=
-        "midMidPress(); myfunc();" class="square" >
-      </div>
-
-    <div type="text" id="m3" onclick=
-        "midRightPress(); myfunc();" class="square" >
-      </div>
-
-    <div type="text" id="bt1" onclick=
-        "btmLeftPress(); myfunc();" class="square">
-      </div>
-
-    <div type="text" id="bt2" onclick=
-        "btmMidPress();myfunc();" class="square">
-      </div>
-
-    <div type="text" id="bt3" onclick=
-        "btmRightPress();myfunc();" class="square">
-      </div>
-    <!-- Button to reset game -->
-      <br>
-    <br>
-    <br>
-    <div>
-
-    </div>
-
-  </div>
-    <!-- Grid end here  -->
-    <br><br><br>
-    <button id="but" onclick="resetFunc()">
-      RESET
-  </button>
+  
   </main>
   <script src="./flag.js"></script>
 </body>
