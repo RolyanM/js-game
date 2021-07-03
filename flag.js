@@ -30,7 +30,7 @@ const setBoardHoverClass = () => {
   board.classList.remove( 'argentina' );
 
   if ( englandTurn ) {
-    board.classList.add( 'england' );
+    board.classList.add( '.england' );
   } else {
     board.classList.add( 'argentina' );
   }

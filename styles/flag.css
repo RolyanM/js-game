@@ -91,16 +91,6 @@ img {
   max-width: 495px;
   margin: 0 auto 15px;
 }
-.board.england .cell:not(.argentina):not(.england):hover::before, .board.argentina .cell:not(.argentina):not(.england):hover::before {
-  background-size: contain;
-  opacity: 50%;
-}
-.board.england .cell:not(.argentina):hover::before {
-  background-image: url("images/flag-england-flagge-quadratisch-85x85.gif");
-}
-.board.argentina .cell:not(.england):hover::before {
-  background-image: url("https://flagcdn.com/w80/ar.png");
-}
 
 .cell {
   cursor: pointer;
