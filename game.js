@@ -1,6 +1,6 @@
 function ticTacToe() {
   
-  // Setting DOM to all boxes or input field
+  //letiables
   
   let topLeft = document.getElementById("t1").value;
   let topMid = document.getElementById("t2").value;
@@ -12,11 +12,10 @@ function ticTacToe() {
   let btmMid= document.getElementById("bt2").value;
   let btmRight = document.getElementById("bt3").value;
 
-  // Checking if Player X won or not and after 
-  // that disabled all the other fields
+//check to see if x has won 
   if ((topLeft == 'X') && (topMid == 'X') && (topRight == 'X')) {
 
-      var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+      let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
       textSequence(0);
       function textSequence(i) {
@@ -41,7 +40,7 @@ function ticTacToe() {
   }
   else if ((topLeft == 'X') && (midLeft == 'X') && (btmLeft == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -67,7 +66,7 @@ function ticTacToe() {
   }
   else if ((btmLeft == 'X') && (btmMid == 'X') && (btmRight == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -92,7 +91,7 @@ function ticTacToe() {
   }
   else if ((topRight == 'X') && (midRight == 'X') && (btmRight == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -117,7 +116,7 @@ function ticTacToe() {
   }
   else if ((topLeft == 'X') && (midMid == 'X') && (btmRight == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -142,7 +141,7 @@ function ticTacToe() {
   }
   else if ((topRight == 'X') && (midMid == 'X') && (btmLeft == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -167,7 +166,7 @@ function ticTacToe() {
   }
   else if ((topMid == 'X') && (midMid == 'X') && (btmMid == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -192,7 +191,7 @@ function ticTacToe() {
   }
   else if ((midLeft == 'X') && (midMid == 'X') && (midRight == 'X')) {
 
-    var xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
+    let xWinningMessage = ['Player X won', 'X is the Winner', 'Player X won', 'X is the Winner', 'Your father would be proud', 'Player X won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -221,7 +220,7 @@ function ticTacToe() {
   // not and after that disabled all the other fields
   else if ((topLeft == '0') && (topMid == '0') && (topRight == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -246,7 +245,7 @@ function ticTacToe() {
   }
   else if ((topLeft == '0') && (midLeft == '0') && (btmLeft == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -271,7 +270,7 @@ function ticTacToe() {
   }
   else if ((btmLeft == '0') && (btmMid == '0') && (btmRight == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -296,7 +295,7 @@ function ticTacToe() {
   }
   else if ((topRight == '0') && (midRight == '0') && (btmRight == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -321,7 +320,7 @@ function ticTacToe() {
   }
   else if ((topLeft == '0') && (midMid == '0') && (btmRight == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -346,7 +345,7 @@ function ticTacToe() {
   }
   else if ((topRight == '0') && (midMid == '0') && (btmLeft == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -371,7 +370,7 @@ function ticTacToe() {
   }
   else if ((topMid == '0') && (midMid == '0') && (btmMid == '0')) {
 
-    var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -396,7 +395,7 @@ function ticTacToe() {
   }
   else if ((midLeft == '0') && (midMid == '0') && (midRight == '0')) {
 
-    var oWinningMessage = ['Eaaassssyyyyyyy', 'Eaaaaaaasssssyyyyy', 'Easy', 'Easy!', 'Easy!!', 'Player 0 won' ];
+    let oWinningMessage = ['Eaaassssyyyyyyy', 'Eaaaaaaasssssyyyyy', 'Easy', 'Easy!', 'Easy!!', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
@@ -420,8 +419,8 @@ function ticTacToe() {
 
   }
 
-  // Checking of Player 0 finsh
-  // Here, Checking about Tie
+ 
+  // check for the draw
   else if ((topLeft == 'X' || topLeft == '0') && (topMid == 'X' 
       || topMid == '0') && (topRight == 'X' || topRight == '0') && 
       (midLeft == 'X' || midLeft == '0') && (midMid == 'X' || 
@@ -448,8 +447,7 @@ function ticTacToe() {
 
 
 
-// Here onwards, functions check turn of the player 
-// and put accordingly value X or 0
+//put the x or o in the corresponding box
 flag = 1;
 function topLeftPress() {
   if (flag == 1) {
