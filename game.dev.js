@@ -218,7 +218,7 @@ function ticTacToe() {
         }
       };
 
-      var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won'];
+      var oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won'];
 
       _textSequence8(0);
 

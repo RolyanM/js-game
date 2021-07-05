@@ -97,7 +97,7 @@ const endGame = ( draw ) => {
 // -- Event Handler --
 const handleCellClick = ( e ) => {
   const cell = e.target;
-  const currentTeam = englandTurn ? 'england' : 'argentina';
+  let currentTeam = englandTurn ? 'england' : 'argentina';
 
   placeFlagFunction( cell, currentTeam );
   if ( checkWin( currentTeam )) {

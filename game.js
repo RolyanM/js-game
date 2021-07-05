@@ -220,7 +220,7 @@ function ticTacToe() {
   // not and after that disabled all the other fields
   else if ((topLeft == '0') && (topMid == '0') && (topRight == '0')) {
 
-    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won' ];
+    let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won' ];
 
     textSequence(0);
     function textSequence(i) {
