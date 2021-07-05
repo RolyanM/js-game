@@ -1,4 +1,4 @@
-// -- HTML elements --
+// -- DOM --
 const board = document.getElementById( 'board' );
 const cells = document.querySelectorAll( '[data-cell]' );
 const currentStatus = document.getElementById( 'currentStatus' );
@@ -46,10 +46,10 @@ const swapTurns = () => {
 
 const updateCurrentStatus = () => {
   if ( englandTurn ) {
-    currentTeamFlag.src = './images/flag-england-flagge-quadratisch-85x85.gif';
+    currentTeamFlag.src = `./images/flag-england-flagge-quadratisch-85x85.gif`;
     currentTeamFlag.alt = 'england';
   } else {
-    currentTeamFlag.src = 'https://flagcdn.com/w80/ar.png';
+    currentTeamFlag.src = `https://flagcdn.com/w80/ar.png`;
     currentTeamFlag.alt = 'argentina';
   }
 }

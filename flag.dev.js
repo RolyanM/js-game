@@ -8,7 +8,7 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-// -- HTML elements --
+// -- DOM --
 var board = document.getElementById('board');
 var cells = document.querySelectorAll('[data-cell]');
 var currentStatus = document.getElementById('currentStatus');
@@ -45,10 +45,10 @@ var swapTurns = function swapTurns() {
 
 var updateCurrentStatus = function updateCurrentStatus() {
   if (englandTurn) {
-    currentTeamFlag.src = './images/flag-england-flagge-quadratisch-85x85.gif';
+    currentTeamFlag.src = "./images/flag-england-flagge-quadratisch-85x85.gif";
     currentTeamFlag.alt = 'england';
   } else {
-    currentTeamFlag.src = 'https://flagcdn.com/w80/ar.png';
+    currentTeamFlag.src = "https://flagcdn.com/w80/ar.png";
     currentTeamFlag.alt = 'argentina';
   }
 };

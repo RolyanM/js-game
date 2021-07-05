@@ -242,7 +242,7 @@ function ticTacToe() {
         }
       };
 
-      var _oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won'];
+      var _oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won'];
 
       _textSequence9(0);
 
@@ -314,7 +314,7 @@ function ticTacToe() {
         }
       };
 
-      var _oWinningMessage4 = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won'];
+      var _oWinningMessage4 = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won'];
 
       _textSequence12(0);
 
@@ -338,7 +338,7 @@ function ticTacToe() {
         }
       };
 
-      var _oWinningMessage5 = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won'];
+      var _oWinningMessage5 = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won'];
 
       _textSequence13(0);
 
@@ -362,7 +362,7 @@ function ticTacToe() {
         }
       };
 
-      var _oWinningMessage6 = ['Player 0 won', '0 is the Winner', 'Player 0 won', 'X is the Winner', 'Your father would be proud', 'Player 0 won'];
+      var _oWinningMessage6 = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won'];
 
       _textSequence14(0);
 
