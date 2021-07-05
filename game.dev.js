@@ -1,7 +1,7 @@
 "use strict";
 
 function ticTacToe() {
-  //letiables
+  //variables 
   var topLeft = document.getElementById("t1").value;
   var topMid = document.getElementById("t2").value;
   var topRight = document.getElementById("t3").value;
@@ -201,9 +201,7 @@ function ticTacToe() {
     document.getElementById("bt1").disabled = true;
     document.getElementById("bt2").disabled = true;
     document.getElementById("bt3").disabled = true;
-  } // Checking of Player X finsh
-  // Checking for Player 0 starts, Is player 0 won or
-  // not and after that disabled all the other fields
+  } // check to seee if 0 has won
   else if (topLeft == '0' && topMid == '0' && topRight == '0') {
       var _textSequence8 = function _textSequence8(i) {
         if (oWinningMessage.length > i) {

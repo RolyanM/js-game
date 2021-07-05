@@ -1,6 +1,6 @@
 function ticTacToe() {
   
-  //letiables
+  //variables 
   
   let topLeft = document.getElementById("t1").value;
   let topMid = document.getElementById("t2").value;
@@ -215,9 +215,8 @@ function ticTacToe() {
 
   }
 
-  // Checking of Player X finsh
-  // Checking for Player 0 starts, Is player 0 won or
-  // not and after that disabled all the other fields
+// check to seee if 0 has won
+ 
   else if ((topLeft == '0') && (topMid == '0') && (topRight == '0')) {
 
     let oWinningMessage = ['Player 0 won', '0 is the Winner', 'Player 0 won', '0 is the Winner', 'Your father would be proud', 'Player 0 won' ];

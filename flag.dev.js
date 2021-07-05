@@ -17,7 +17,7 @@ var gameEndOverlay = document.getElementById('gameEndOverlay');
 var currentTeamFlag = document.getElementById('currentTeam');
 var winningMessage = document.querySelector('[data-winning-message]');
 var winningMessageText = document.querySelector('[data-winning-message] p');
-var winningMessageImg = document.createElement('img'); // -- Game Variables --
+var winningMessageImg = document.createElement('img'); //  Variables 
 
 var gameIsLive = true;
 var englandTurn = true;

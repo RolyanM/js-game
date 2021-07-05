@@ -9,7 +9,7 @@ const winningMessage = document.querySelector( '[data-winning-message]' );
 const winningMessageText = document.querySelector( '[data-winning-message] p' );
 const winningMessageImg = document.createElement( 'img' );
 
-// -- Game Variables --
+//  Variables 
 let gameIsLive = true;
 let englandTurn = true;
 let winner = null;
