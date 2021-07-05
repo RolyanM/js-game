@@ -89,9 +89,22 @@ p {
     &::before {
 
       background-size: contain;
+
+      &.argentina::before {
+        background-image: url( 'https://flagcdn.com/w80/ar.png' );
+      }
+      
+      &.englabd::before {
+        background-image: url( './images/flag-england-flagge-quadratisch-85x85.gif' );
+      }
+
+     
     }
   }
  }
+
+
+ 
 
 
 .game-end-overlay {
@@ -149,5 +162,14 @@ p {
     left: 6px;
     box-shadow: none;
     background-color: darken( $purple, 5 );
+  }
+}
+
+
+@mixin mq( $size ) {
+  @if $size == tablet {
+    @media ( min-width: 600px ) { @content; }
+  } @else if $size == desktop {
+    @media ( min-width: 1024px ) { @content; }
   }
 }

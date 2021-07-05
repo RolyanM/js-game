@@ -35,8 +35,8 @@ var setBoardHoverClass = function setBoardHoverClass() {
   }
 };
 
-var placeFlagFunction = function placeFlagFunction(cell, currentTeamFlag) {
-  cell.classList.add(currentTeamFlag);
+var placeFlagFunction = function placeFlagFunction(image, currentTeamFlag) {
+  image.classList.add(currentTeamFlag);
 };
 
 var swapTurns = function swapTurns() {
@@ -46,10 +46,12 @@ var swapTurns = function swapTurns() {
 var updateCurrentStatus = function updateCurrentStatus() {
   if (englandTurn) {
     currentTeamFlag.src = "./images/flag-england-flagge-quadratisch-85x85.gif";
-    currentTeamFlag.alt = 'england';
+    currentTeamFlag.alt = '.england';
+    var topLeft = document.querySelector(".cell").src = "./images/flag-england-flagge-quadratisch-85x85.gif";
+    console.log(topLeft);
   } else {
     currentTeamFlag.src = "https://flagcdn.com/w80/ar.png";
-    currentTeamFlag.alt = 'argentina';
+    currentTeamFlag.alt = '.argentina';
   }
 };
 
@@ -109,7 +111,7 @@ var handleCellClick = function handleCellClick(e) {
     updateCurrentStatus();
     setBoardHoverClass();
   }
-}; // -- Event Listener --
+}; //reset the game on button press
 
 
 resetButton.addEventListener('click', startGame); // -- Start Game --

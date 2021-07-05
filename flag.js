@@ -36,8 +36,8 @@ const setBoardHoverClass = () => {
   }
 }
 
-const placeFlagFunction = ( cell, currentTeamFlag ) => {
-  cell.classList.add( currentTeamFlag );
+const placeFlagFunction = ( image, currentTeamFlag ) => {
+  image.classList.add( currentTeamFlag );
 }
 
 const swapTurns = () => {
@@ -45,12 +45,15 @@ const swapTurns = () => {
 }
 
 const updateCurrentStatus = () => {
+ 
   if ( englandTurn ) {
     currentTeamFlag.src = `./images/flag-england-flagge-quadratisch-85x85.gif`;
-    currentTeamFlag.alt = 'england';
+    currentTeamFlag.alt = '.england';
+    let topLeft = document.querySelector(".cell").src = `./images/flag-england-flagge-quadratisch-85x85.gif`;
+    console.log(topLeft);
   } else {
     currentTeamFlag.src = `https://flagcdn.com/w80/ar.png`;
-    currentTeamFlag.alt = 'argentina';
+    currentTeamFlag.alt = '.argentina';
   }
 }
 
@@ -111,7 +114,7 @@ const handleCellClick = ( e ) => {
   }
 }
 
-// -- Event Listener --
+//reset the game on button press
 resetButton.addEventListener( 'click', startGame );
 
 // -- Start Game --

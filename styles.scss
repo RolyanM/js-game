@@ -19,7 +19,7 @@
   /* Game Instruction Text */
 #ins {
    font-family: Verdana, Geneva, Tahoma, sans-serif;  
-    color: dodgerblue;
+    color: black;
     font-size: 17px;
     text-align: center;
   }
@@ -27,7 +27,7 @@
   #print {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
-    color: dodgerblue;
+    color: black;
     font-size: 17px;
     text-align: center;
   }
@@ -105,4 +105,12 @@ input:active {
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+
+@mixin mq( $size ) {
+  @if $size == tablet {
+    @media ( min-width: 600px ) { @content; }
+  } @else if $size == desktop {
+    @media ( min-width: 1024px ) { @content; }
+  }
 }
