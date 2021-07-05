@@ -111,7 +111,7 @@ img {
 .cell.argentina::before.argentina::before, .cell.england::before.argentina::before {
   background-image: url("https://flagcdn.com/w80/ar.png");
 }
-.cell.argentina::before.englabd::before, .cell.england::before.englabd::before {
+.cell.argentina::before.england::before, .cell.england::before.england::before {
   background-image: url("./images/flag-england-flagge-quadratisch-85x85.gif");
 }
 

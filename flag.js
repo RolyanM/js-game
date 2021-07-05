@@ -36,8 +36,15 @@ const setBoardHoverClass = () => {
   }
 }
 
-const placeFlagFunction = ( image, currentTeamFlag ) => {
-  image.classList.add( currentTeamFlag );
+const placeFlagFunction = ( cell, currentTeamFlag ) => {
+  cell.classList.add( currentTeamFlag );
+  if ( englandTurn ) {
+    cell.src = `./images/flag-england-flagge-quadratisch-85x85.gif`;
+     
+  } else {
+    cell.src = `https://flagcdn.com/w80/ar.png`;
+    
+  }
 }
 
 const swapTurns = () => {
@@ -49,8 +56,8 @@ const updateCurrentStatus = () => {
   if ( englandTurn ) {
     currentTeamFlag.src = `./images/flag-england-flagge-quadratisch-85x85.gif`;
     currentTeamFlag.alt = '.england';
-    let topLeft = document.querySelector(".cell").src = `./images/flag-england-flagge-quadratisch-85x85.gif`;
-    console.log(topLeft);
+   
+  
   } else {
     currentTeamFlag.src = `https://flagcdn.com/w80/ar.png`;
     currentTeamFlag.alt = '.argentina';
@@ -80,8 +87,6 @@ const startGame = () => {
     cell.addEventListener( 'click', handleCellClick, { once: true });
   });
 
-  setBoardHoverClass();
-  gameEndOverlay.classList.remove( 'show' );
 }
 
 const endGame = ( draw ) => {
